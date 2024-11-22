@@ -9,6 +9,7 @@ document.getElementById("wordsearch-form").addEventListener("submit", async (e) 
     });
     const results = await response.json();
     document.getElementById("results").innerHTML = `
-        <p>${results.message}</p>
+        <h3>Palabras encontradas:</h3> <p>${results.found.join(", ")}</p>
+        <h3>Palabras no encontradas:</h3> <p>${results.not_found.join(", ")}</p>
     `;
 });
