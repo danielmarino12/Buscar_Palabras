@@ -10,7 +10,7 @@ def index():
 def solve():
     data = request.json
     
-    return jsonify({"message": "Prueba de Funcionamiento"})
+    return jsonify({"message": "Prueba de Conexcion"})
 
 if __name__ == '__main__':
     app.run(debug=True)
