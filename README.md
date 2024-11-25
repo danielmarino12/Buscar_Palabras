@@ -43,9 +43,7 @@ pip install -r requirements.txt
 ```
 ### Iniciar Servidores:
 Ejecutar Archivo starts_servers.bat
-```bash
-pip install foobar
-```
+
 
 ## Uso
 ### Buscar Palabras con Matriz copiada
