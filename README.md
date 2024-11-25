@@ -6,15 +6,18 @@ Este proyecto consta de dos aplicaciones principales: un Buscador de Palabras y 
 
 Python 3.11: Lenguaje de programación principal. <img height="50" src="https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png">
 
-Flask: Framework web utilizado para crear los servidores backend de ambos proyectos. <img height="50" src="https://user-images.githubusercontent.com/25181517/183423775-2276e25d-d43d-4e58-890b-edbc88e915f7.png">
-
-JavaScript: Leguaje por funciones en la web. <img height="50" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png">
-
 pytesseract: Herramienta para realizar OCR sobre imágenes (para el caso de imágenes con texto).
 
 OpenCV: Biblioteca para el procesamiento de imágenes antes de aplicar OCR.
 
-HTML, CSS, JavaScript: Para la creación de la interfaz de usuario (Frontend).<img height="50" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"> <img height="50" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png">
+Requests: Biblioteca de Python utilizada para realizar solicitudes HTTP a otros servicios.
+
+Flask: Framework web utilizado para crear los servidores backend de ambos proyectos. <img height="50" src="https://user-images.githubusercontent.com/25181517/183423775-2276e25d-d43d-4e58-890b-edbc88e915f7.png">
+
+JavaScript: Leguaje por funciones en la web. <img height="50" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png">
+
+
+HTML, CSS: Para la creación de la interfaz de usuario (Frontend).<img height="50" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"> <img height="50" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png">
 
 Virtualenv: Para gestionar las dependencias del proyecto en un entorno virtual
 
@@ -32,6 +35,7 @@ Antes de ejecutar el proyecto, asegúrate de tener los siguientes requisitos:
   makefile
   Copiar código
   C:\Program Files\Tesseract-OCR\tesseract.exe
+  
 Crear y activar entorno virtual
 ```bash
 python -m venv venv
