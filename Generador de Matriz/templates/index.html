@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Matrices</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Matrices</h1>
+        <form method="POST" class="form">
+            <label for="theme">Tema:</label>
+            <input type="text" id="theme" name="theme" placeholder="Ingresa un tema" required>
+            <button type="submit">Generar</button>
+        </form>
+
+        {% if matrix %}
+        <div class="matrix-container">
+            <h2>Matriz Generada</h2>
+            <div class="matrix">
+                {% for row in matrix %}
+                <span>{{ row | join(',') }}</span>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="words-container">
+            <h3>Palabras en la Matriz</h3>
+            <ul class="word-list">
+                {% for word in words %}
+                <li>{{ word }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

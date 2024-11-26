@@ -1,0 +1,108 @@
+/* General */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #34495e;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form input {
+    padding: 8px;
+    font-size: 14px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Matrix */
+.matrix-container {
+    margin: 20px 0;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.matrix {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+
+.matrix span {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Word */
+.words-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.word-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.word-list li {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.word-list li:hover {
+    background-color: #16a085;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}

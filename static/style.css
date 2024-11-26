@@ -1,18 +1,234 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 20px;
 }
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 textarea {
-    width: 80%;
+    width: 100%;
     height: 100px;
-    margin: 10px auto;
-    display: block;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    resize: none;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
 button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+button:hover {
+    background-color: #45a049;
+}
+
 #results {
     margin-top: 20px;
+}
+
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center; 
+    align-items: center; 
+}
+
+.modal.active {
+    display: flex; /
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modal-body {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.matrix-container {
+    display: inline-block;
+    text-align: center;
+}
+
+.matrix-container div {
+    display: flex;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cell.highlighted {
+    font-weight: bold;
+    color: white; 
+}
+
+/* Estilos para las listas de palabras */
+.not-found-container,
+.found-container {
+    width: 200px;
+}
+
+.not-found-container ul,
+.found-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.not-found-container ul li,
+.found-container ul li {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Estilo para las palabras no encontradas */
+.not-found-container ul li {
+    color: red;
+}
+
+/* Estilo para las palabras encontradas desde JS */
+.cell.highlighted[data-word] {
+    background-color: var(--highlight-color);
+}
+
+/* Pestañas */
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Imagen */
+#image-preview img {
+    max-width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#generated-matrix {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+}
+
+.matrix-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.matrix-link button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.matrix-link button:hover {
+    background-color: #45a049;
+}
+
+.image-input{
+font-family: 'Courier New', Courier, monospace;
 }
