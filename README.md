@@ -1,6 +1,6 @@
 # Buscador de Palabras y Gestor de Matrices
 
-Este proyecto consta de dos aplicaciones principales: un Buscador de Palabras y un Gestor de Matrices. El Buscador de Palabras permite a los usuarios buscar palabras dentro de una matriz de texto proporcionada, o generada desde una imagen esta extrae texto de imágenes (como matrices) utilizando OCR (Reconocimiento Óptico de Caracteres) y luego permite realizar búsquedas en el texto extraído, en cambio el generador de matriz  toma una palabra de entrada y genera una matriz de caracteres alrededor de esa palabra, colocando la palabra en la matriz y rellenando el resto con caracteres aleatorios, se realiza por medio de una api.
+Este proyecto consta de dos aplicaciones principales: un Buscador de Palabras y un Gestor de Matrices. El Buscador de Palabras permite a los usuarios buscar palabras dentro de una matriz 14x14 de texto ya creada o generada desde una imagen, creándola esta extrae texto de imágenes (como matrices) utilizando OCR (Reconocimiento Óptico de Caracteres) y luego permite realizar búsquedas en el texto extraído en el Buscador de Palabras, en cambio el generador de matriz toma una palabra de entrada y genera una matriz de caracteres alrededor de esa palabra, colocando la palabra en la matriz y rellenando el resto con caracteres aleatorios, se realiza por medio de una API.
 
 ## Tecnologias Utilizadas
 
