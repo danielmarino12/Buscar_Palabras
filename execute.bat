@@ -13,11 +13,11 @@ if %errorlevel% neq 0 (
 REM Crear el entorno virtual si no existe
 if not exist venv (
     echo Creando entorno virtual...
-    python -m venv venv
+    python -m venv env
 )
 
 REM Activar el entorno virtual
-call venv\Scripts\activate
+call env\Scripts\activate
 
 REM Instalar los paquetes desde requirements.txt
 if exist requirements.txt (
