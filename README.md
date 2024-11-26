@@ -24,30 +24,31 @@ Virtualenv: Para gestionar las dependencias del proyecto en un entorno virtual
 
 
 ## Instalación
-Antes de ejecutar el proyecto, asegúrate de tener los siguientes requisitos:
+1.	Crear Carpeta en el escritorio: Crear una carpeta en el escritorio Llamada Busca_Palabras.
 
-* Python 3.11
+2.	Instalar Python: Instalar Python versión 3.11
 
-* Tesseract OCR: Debes instalar Tesseract en tu sistema para poder extraer texto de imágenes. 
+3.	Instalar Tesseract OCR: Debes instalar Tesseract en tu sistema para poder extraer texto de imágenes (Instalador incluido en los archivos de GITHUB).
 
-* En Windows, agrega la ruta de instalación de Tesseract a las variables de entorno:
+4.	Copia lo archivos: Copia los archivos descargados del GITHUB en la carpeta Busca_Palabras.
 
-  makefile
-  Copiar código
-  C:\Program Files\Tesseract-OCR\tesseract.exe
-  
+5.	Crear entorno virtual e instalar requerimientos: Tienes dos formas de crear el entorno, activarlo e instalar los requerimientos:
+
+- Ejecutando archivo .bat: Solo debes darle doble clic al archivo execute.bat él lo que hará es comprobar si tienes Python   instalado, creara el entrono virtual, lo activara e instalara los requerimientos necesarios para la ejecución del proyecto.
+
+- Ejecutando por consola: Solo debes desde cualquier consola navegar hasta la carpeta del proyecto, estando ahí pones este comando python -m venv env esperas que termine e ingresas a esta ruta env\Scripts\activate y regresas a la ruta de la carpeta. Aquí ya puedes instalar los requerimientos con este comando pip install -r requirements.txt y listo esperas que termine y ya puedes pasar al siguiente paso.
 Crear y activar entorno virtual
+
 ```bash
 python -m venv env
 env\Scripts\activate
 ```
-### Instalar dependencias:
-```bash
-pip install -r requirements.txt
-```
-### Iniciar Servidores:
-Ejecutar Archivo starts_servers.bat
 
+6.	Modifica las rutas: Modifica las rutas de archivo del archivo starts_servers.bat, esto lo puedes hacer dándole clic derecho al archivo y editar ahí solo debes modificar solo el usuario: C:\Users\pones tu usuario\Desktop\Busca_Palabras eso lo debes de hacer en las rutas que encuentres en él .bat que exactamente son 2, por último, guardas los cambios.
+```bash
+ C:\Users\pones tu usuario\Desktop\Busca_Palabras
+```
+8.	Ejecutar el .bat: Después de modificado y guardado el archivo .bat ejecutas el archivo dándole doble clic y el iniciara los servidores y te abre el navegador con el aplicativo web.
 
 ## Uso
 ### Buscar Palabras con Matriz copiada
@@ -78,7 +79,7 @@ S,I,X,V,N,O,V,M,V,G,O,Y,I,O
 5. Los resultados te mostrarán las palabras encontradas y no encontradas y podrá descargar las palabras y sus coordenadas en un archivo json.
 
 ### Procesar imagen para sacar matriz
-1. en la misma interfaz en el botón procesar imagen
+1. En la misma interfaz en el botón procesar imagen
 
 2. Seleccionar una imagen con la estructura correspondiente (14x14)
 3. Dar clic en botón extraer matriz y se genera una matriz extrayendo las letras de la imagen, la cual copia y pega en la anterior interfaz agregando las palabras a buscar.
@@ -87,4 +88,4 @@ S,I,X,V,N,O,V,M,V,G,O,Y,I,O
 1. Botón a gestor de matrices
 2. En la nueva pagina va a solicitar una palabra la cual debe ser en ingles (cars) y el automáticamente generara una matriz 14x14 con palabras que tengan que ver con la palabra buscada(nissan, renault, etc), poniéndolas en forma vertical, horizontal y diagonal, y genera también las palabras insertadas en la matriz para que la pruebes en el buscador de palabras.
 
-
+### Nota: Manual incluido en el repositorio
