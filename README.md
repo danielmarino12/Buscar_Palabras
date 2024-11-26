@@ -39,7 +39,7 @@ Antes de ejecutar el proyecto, asegúrate de tener los siguientes requisitos:
 Crear y activar entorno virtual
 ```bash
 python -m venv venv
-venv\Scripts\activate
+env\Scripts\activate
 ```
 ### Instalar dependencias:
 ```bash
